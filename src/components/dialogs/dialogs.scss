@@ -1,0 +1,11 @@
+.dialogs {
+    display: flex;
+.user {
+    flex-direction: column;
+}
+.message {
+    margin-left: 100px;
+    flex-direction: column;
+}
+}
+
