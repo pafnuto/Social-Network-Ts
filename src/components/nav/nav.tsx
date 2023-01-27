@@ -5,7 +5,8 @@ import {NavLink} from "react-router-dom";
 export const Nav = () => {
   return (
     <div className="nav">
-      <h1>NAV</h1>
+    <li><NavLink to="/dialogs"className={({ isActive }) => (isActive ? 'bg-green-500 font-bold' : 'bg-red-500 font-thin')}>Диалоги</NavLink></li>
+
     </div>
   )
 }

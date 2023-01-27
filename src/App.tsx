@@ -10,7 +10,6 @@ function App() {
   <div className="body">
     <Nav/>
     <div className="container">
-
     </div>
   </div>
 </div>
