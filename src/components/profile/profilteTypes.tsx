@@ -1,8 +1,4 @@
-export type profilePropsType = {
-    profile: profileType
-  };
-
-export type contactsType = {
+export type contactType = {
     facebook: string,
     website: null,
     vk: string,
@@ -20,10 +16,10 @@ export type contactsType = {
 
   export type profileType = {
     aboutMe: string
-    contacts: contactsType
+    contacts: contactType
     lookForAJob: boolean
-    lookingForAJobDescription: string
+    lookForAJobDescrip: string
     fullName: string
     userId: number
     photos: photoType
-  } | null;
+  } | null

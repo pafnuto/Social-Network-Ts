@@ -1,9 +1,16 @@
 import React from 'react';
 import './profile.scss';
-import {profilePropsType} from './profilteTypes'
+import {profileType} from './profilteTypes';
+import {ProfileInfo} from '../profile/profileContent/profileInfo';
 
-export const profile = (props: profilePropsType) => {
+type ProfilePropsType  = {
+  profile: profileType
+}
+
+export const Profile = (props: ProfilePropsType ) => {
   return (
-    <div>profile</div>
+    <div className='profileBody'>
+      <ProfileInfo profile={props.profile}/>
+    </div>
   )
 }

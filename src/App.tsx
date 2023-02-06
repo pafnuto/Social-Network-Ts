@@ -4,7 +4,7 @@ import { HeaderState } from './components/header/header';
 import { Nav } from './components/nav/nav';
 import {Route, Routes} from "react-router-dom";
 import Login  from './components/login/login';
-import {profileContainer} from './components/profile/profileContainer'
+import { ProfileContainer } from './components/profile/profileContainer'
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
     <div className="container">
     <Routes>
               <Route path='/login' element={<Login/>}/>
-              <Route path='/' element={<profileContainer/>}/>
+              <Route path='/' element={<ProfileContainer/>}/>
             </Routes>
     </div>
   </div>
