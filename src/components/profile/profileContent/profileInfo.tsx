@@ -1,4 +1,5 @@
 import React from "react";
+import "./profileContent.scss";
 import {profileType} from "../profilteTypes";
 import ProfileStatus from "./profileStatus";
 
@@ -7,7 +8,6 @@ type profileInfoPropsType = {
   }
 
   export const ProfileInfo = (props: profileInfoPropsType) => {
-    if (!props.profile)
     return (
         <div className='profileInfoBody'>
           <div className="profilePhoto">
@@ -28,6 +28,5 @@ type profileInfoPropsType = {
           </div>
           <ProfileStatus status={'Привет'}/>
         </div>
-
     )
   }

@@ -15,11 +15,11 @@ export type contactType = {
   }
 
   export type profileType = {
+    userId: number
+    fullName: string
     aboutMe: string
     contacts: contactType
     lookForAJob: boolean
     lookForAJobDescrip: string
-    fullName: string
-    userId: number
     photos: photoType
-  } | null
+  } 
